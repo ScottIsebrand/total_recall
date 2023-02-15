@@ -115,6 +115,20 @@ console.log(whereIsWaldo[2][1][1]);
 
 ////////////////////////////////
 //*  Excited Kitten
+excitedKittenString = 'Love me, pet me! HSSSSSS!';
+
+for (i = 1; i <= 20; i++) {
+// let kittenString1 = 'HOOMAN, Y R U TAKIN PICTUREZ OV ME?'
+// let kittenString2 = 'THE CATNIP MADE ME DO IT'
+// let kittenString3 = 'Y DOEZ TEH RED DOT ALWAYS GIT AWAY.'
+    //if (i % 2 === 0) {
+
+    } 
+    console.log(i, excitedKittenString);
+
+// let randomNum = Math.floor(Math.random() * 3) + 1
+
+
 ////////////////////////////////
 
 ////////////////////////////////
