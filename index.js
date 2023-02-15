@@ -264,30 +264,97 @@ const thomsCloset = [
 // getMultipleLengths(['hello', 'what', 'was', 'up', 'dude']);
 
 // G.
-function maxOfThree(num1, num2, num3) {
-  let maxNum = num1;
-  if (maxNum < num2) {
-    maxNum = num2;
-  }
-  if (maxNum < num3) {
-    maxNum = num3;
-  }
-  console.log(maxNum);
-  return maxNum;
-}
-maxOfThree(15, 77, 99);
+// function maxOfThree(num1, num2, num3) {
+//   let maxNum = num1;
+//   if (maxNum < num2) {
+//     maxNum = num2;
+//   }
+//   if (maxNum < num3) {
+//     maxNum = num3;
+//   }
+//   console.log(maxNum);
+//   return maxNum;
+// }
+// maxOfThree(15, 77, 99);
 
-// H.
+// H. Write a function printLongestWord that accepts a single argument, an array of strings. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// function printLongestWord(arrayOfStrings) {
+//   let longestWordInArray = '';
+//   for (let i = 0; i < arrayOfStrings.length; i++)
+//     if (longestWordInArray.length < arrayOfStrings[i].length) {
+//       longestWordInArray = arrayOfStrings[i];
+//     }
+//   console.log(longestWordInArray);
+//   return longestWordInArray;
+// }
+
+// printLongestWord(['Jack', 'do', 'Diane', 'a', 'Max', 'Peanut', 'big']);
+
 //_____________________________________________________________
 
 // V. Objects
 // A.
+const user = {
+  name: 'John',
+  email: 'johnjsmith123@gmail.com',
+  age: 33,
+  purchased: [],
+};
+
 // B.
+user.email = 'johnjaysmith123@gmail.com';
+user.age++;
+
 // C.
-// D.
+user.location = 'Boise';
+
+// D
+user.purchased.push('carbohydrates');
+user.purchased.push('peace of mind');
+user.purchased.push('Merino jodhpurs');
+
+// console.log(user.purchased[2]);
+
 // E.
+user.friend = {
+  name: 'Grace Hopper',
+  age: 85,
+  location: 'New York City',
+  purchased: [],
+};
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push('The One Ring');
+user.friend.purchased.push('A latte');
+console.log(user);
+
 // F.
+for (let i = 0; i < user.purchased.length; i++) {
+  console.log(user.purchased[i]);
+}
+
+for (let i = 0; i < user.friend.purchased.length; i++) {
+  console.log(user.friend.purchased[i]);
+}
+
 // G.
+function updateUser() {
+  user.age++;
+  user.name = user.name.toUpperCase();
+}
+updateUser();
+console.log(user);
+
+function oldAndLoud(person) {
+  person.age++;
+  person.name = person.name.toUpperCase();
+}
+
+oldAndLoud(user);
+console.log(user);
+
 //_____________________________________________________________
 
 // Extra
