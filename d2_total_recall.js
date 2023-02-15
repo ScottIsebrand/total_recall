@@ -97,16 +97,17 @@ console.log(favMovies.indexOf('Fast and Furious'));
 
 ////////////////////////////////
 //* Where is Waldo
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
-                    ["Petunia", ["Baked Goods", "Waldo"]]];
+const whereIsWaldo = [
+  ['Timmy', 'Frank'],
+  'Eggbert',
+  ['Lucinda', 'Jacc', 'Neff', 'Snoop'],
+  ['Petunia', ['Baked Goods', 'Waldo']],
+];
 
-
-console.log(whereIsWaldo.splice([1], 1))
+console.log(whereIsWaldo.splice([1], 1));
 whereIsWaldo[1][2] = 'No one';
 console.log(whereIsWaldo);
 console.log(whereIsWaldo[2][1][1]);
-
 
 // let whereIsWaldoSlice = whereIsWaldo.slice()
 // console.log(whereIsWaldo);
@@ -114,20 +115,22 @@ console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 
 ////////////////////////////////
-//*  Excited Kitten
+//*  Excited Kitten (using https://speaklolcat.com/)
+
 excitedKittenString = 'Love me, pet me! HSSSSSS!';
-
 for (i = 1; i <= 20; i++) {
-// let kittenString1 = 'HOOMAN, Y R U TAKIN PICTUREZ OV ME?'
-// let kittenString2 = 'THE CATNIP MADE ME DO IT'
-// let kittenString3 = 'Y DOEZ TEH RED DOT ALWAYS GIT AWAY.'
-    //if (i % 2 === 0) {
-
-    } 
+  if (i % 2 === 0) {
+    let kittyTalk = [
+      'HOOMAN, Y R U TAKIN PICTUREZ OV ME?',
+      'TEH KATNIP MADE ME DO IT',
+      'Y DOEZ TEH RED DOT ALWAYS GIT AWAY.',
+    ];
+    let randomNum = Math.floor(Math.random() * 3);
+    console.log(kittyTalk[randomNum]);
+  } else {
     console.log(i, excitedKittenString);
-
-// let randomNum = Math.floor(Math.random() * 3) + 1
-
+  }
+}
 
 ////////////////////////////////
 
