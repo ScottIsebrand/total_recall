@@ -224,27 +224,59 @@ const thomsCloset = [
 
 // D.
 
-function isVowel(char) {
-  if (
-    char === 'a' ||
-    char === 'e' ||
-    char === 'i' ||
-    char === 'o' ||
-    char === 'u'
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-}
+// function isVowel(char) {
+//   let lowerCaseLetter = char.toLowerCase();
+//   if (
+//     lowerCaseLetter === 'a' ||
+//     lowerCaseLetter === 'e' ||
+//     lowerCaseLetter === 'i' ||
+//     lowerCaseLetter === 'o' ||
+//     lowerCaseLetter === 'u'
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
-console.log(isVowel('a'));
+// console.log(isVowel('o'));
 
 // E.
-// function getTwoLength(str1, str2)
+// function getTwoLengths(string1, string2) {
+//   return [string1.length, string2.length];
+// }
+// console.log(getTwoLengths('I', 'Robot'));
 
 // F.
+
+// write a function(getMultipleLengths)
+
+// function getMultipleLengths(arrayOfStrings) {
+//   const arrayOfNumbers = [];
+//   for (let i = 0; i < arrayOfStrings.length; i++) {
+//     const currentString = arrayOfStrings[i];
+//     const lengthOfCurrentString = currentString.length;
+//     arrayOfNumbers.push(lengthOfCurrentString);
+//   }
+//   console.log(arrayOfNumbers);
+//   return arrayOfNumbers;
+// }
+// getMultipleLengths(['hello', 'what', 'was', 'up', 'dude']);
+
 // G.
+function maxOfThree(num1, num2, num3) {
+  let maxNum = num1;
+  if (maxNum < num2) {
+    maxNum = num2;
+  }
+  if (maxNum < num3) {
+    maxNum = num3;
+  }
+  console.log(maxNum);
+  return maxNum;
+}
+maxOfThree(15, 77, 99);
+
 // H.
 //_____________________________________________________________
 
