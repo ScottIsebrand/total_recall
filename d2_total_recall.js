@@ -97,20 +97,21 @@ const favMovies = [
 
 ////////////////////////////////
 //* Where is Waldo
-// const whereIsWaldo = [
-//   ['Timmy', 'Frank'],
-//   'Eggbert',
-//   ['Lucinda', 'Jacc', 'Neff', 'Snoop'],
-//   ['Petunia', ['Baked Goods', 'Waldo']],
-// ];
+const whereIsWaldo = [
+  ['Timmy', 'Frank'],
+  'Eggbert',
+  ['Lucinda', 'Jacc', 'Neff', 'Snoop'],
+  ['Petunia', ['Baked Goods', 'Waldo']],
+];
 
-// console.log(whereIsWaldo.splice([1], 1));
-// whereIsWaldo[1][2] = 'No one';
-// console.log(whereIsWaldo);
-// console.log(whereIsWaldo[2][1][1]);
+console.log(whereIsWaldo);
+console.log(whereIsWaldo.splice([1], 1));
+whereIsWaldo[1][2] = 'No one';
+console.log(whereIsWaldo);
+console.log(whereIsWaldo[2][1][1]);
 
-// let whereIsWaldoSlice = whereIsWaldo.slice()
-// console.log(whereIsWaldo);
+let whereIsWaldoSlice = whereIsWaldo.slice();
+console.log(whereIsWaldo);
 
 ////////////////////////////////
 
