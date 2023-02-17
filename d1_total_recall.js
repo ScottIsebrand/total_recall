@@ -291,6 +291,25 @@ const thomsCloset = [
 
 // printLongestWord(['Jack', 'do', 'Diane', 'a', 'Max', 'Peanut', 'big']);
 
+// H. ALTERNATIVE SOLUTION FROM OFFICE HOURS
+// function printLongestWord(arrayOfWords) {
+//   let longestWord = arrayOfWords[0]
+//   let longestWordLength = arrayOfWords[0].length
+//   console.log(longestWord);
+//   arrayOfWords.forEach(currentWord => {
+//     previousLength = longestWordLength
+//     console.log(previousLength);
+//     console.log(longestWord);
+//     longestWordLength = Math.max(longestWord.length, currentWord.length)
+//     if (previousLength !== longestWordLength) {
+//         longestWord = currentWord
+//     }
+//   });
+//   return longestWord
+// }
+
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
 //_____________________________________________________________
 
 // V. Objects

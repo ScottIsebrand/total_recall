@@ -1,101 +1,195 @@
 // SECTION 1 Creating Classes & Factories
 // Create a Hamster class
-class Hamster {
-  constructor(name) {
-    this.owner = '';
-    this.name = name;
-    this.price = 15;
-  }
-  wheelRun() {
-    console.log('squeak squeak');
-  }
-  eatFood() {
-    console.log('nibble nibble');
-  }
-  getPrice() {
-    return this.price;
+// class Hamster {
+//   constructor(name) {
+//     this.owner = '';
+//     this.name = name;
+//     this.price = 15;
+//   }
+//   wheelRun() {
+//     console.log('squeak squeak');
+//   }
+//   eatFood() {
+//     console.log('nibble nibble');
+//   }
+//   getPrice() {
+//     return this.price;
+//   }
+// }
+// // Create a Person class
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//     this.age = 0;
+//     this.height = 0;
+//     this.weight = 0;
+//     this.mood = 0;
+//     this.hamsters = [];
+//     this.bankAccount = 0;
+//   }
+//   getName() {
+//     return this.name;
+//   }
+//   getAge() {
+//     return this.age;
+//   }
+//   getWeight() {
+//     return this.weight;
+//   }
+//   greet() {
+//     console.log(`I'm ${this.name}. Hi.`);
+//   }
+//   eat() {
+//     this.weight++;
+//     this.mood++;
+//   }
+//   exercise() {
+//     this.weight--;
+//   }
+//   ageUp() {
+//     this.age++;
+//     this.height++;
+//     this.weight++;
+//     this.mood--;
+//     this.bankAccount = this.bankAccount + 10;
+//   }
+//   buyHamster(hamster) {
+//     this.hamsters.push(hamster);
+//     this.mood = this.mood + 10;
+//     this.bankAccount = this.bankAccount - hamster.getPrice();
+//   }
+// }
+// // Create a Story with your Person class
+// const timmy = new Person('Timmy');
+
+// for (let i = 0; i < 5; i++) {
+//   timmy.ageUp();
+// }
+
+// for (let i = 0; i < 5; i++) {
+//   timmy.eat();
+// }
+
+// for (let i = 0; i < 5; i++) {
+//   timmy.exercise();
+// }
+
+// for (let i = 0; i < 9; i++) {
+//   timmy.ageUp();
+// }
+
+// const gus = new Hamster('Gus');
+
+// gus.owner = 'Timmy';
+
+// timmy.buyHamster(gus);
+
+// for (let i = 0; i < 15; i++) {
+//   timmy.ageUp();
+// }
+
+// timmy.eat();
+// timmy.eat();
+
+// timmy.exercise();
+// timmy.exercise();
+
+// CHEF MAKES DINNERS
+
+class Dinner {
+  constructor(appetizer, entree, dessert) {
+    this.appetizer = appetizer;
+    this.entree = entree;
+    this.dessert = dessert;
   }
 }
-// Create a Person class
-class Person {
-  constructor(name) {
-    this.name = name;
-    this.age = 0;
-    this.height = 0;
-    this.weight = 0;
-    this.mood = 0;
-    this.hamsters = [];
-    this.bankAccount = 0;
-  }
-  getName() {
-    return this.name;
-  }
-  getAge() {
-    return this.age;
-  }
-  getWeight() {
-    return this.weight;
-  }
-  greet() {
-    console.log(`I'm ${this.name}. Hi.`);
-  }
-  eat() {
-    this.weight++;
-    this.mood++;
-  }
-  exercise() {
-    this.weight--;
-  }
-  ageUp() {
-    this.age++;
-    this.height++;
-    this.weight++;
-    this.mood--;
-    this.bankAccount = this.bankAccount + 10;
-  }
-  buyHamster(hamster) {
-    this.hamsters.push(hamster);
-    this.mood = this.mood + 10;
-    this.bankAccount = this.bankAccount - hamster.getPrice();
+
+class Chef {
+  cooking(appetizer, entree, dessert) {
+    return new Dinner(appetizer, entree, dessert);
   }
 }
-// Create a Story with your Person class
-const timmy = new Person('Timmy');
 
-for (let i = 0; i < 5; i++) {
-  timmy.ageUp();
-}
+let chef1 = new Chef();
+let firstDinner = chef1.cooking('cheese', 'steak', 'lollipops');
+let secondDinner = chef1.cooking('Spam', 'Spam', 'Spam');
+console.log(firstDinner);
+console.log(secondDinner);
 
-for (let i = 0; i < 5; i++) {
-  timmy.eat();
-}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// // CHEF MAKES DINNERS, SOLUTIONS W/ BREAKOUT ROOM'S HELP
+// class Dinner {
+//   constructor(appetizer, entree, dessert) {
+//     this.appetizer = appetizer;
+//     this.entree = entree;
+//     this.dessert = dessert;
+//   }
+// }
 
-for (let i = 0; i < 5; i++) {
-  timmy.exercise();
-}
+// class Chef {
+//   getDinner(appetizer, entree, dessert) {
+//     const dinner = new Dinner(appetizer, entree, dessert);
+//     return dinner;
+//   }
+// }
+// //Creating object for Chef class to then use method and take the properties from Dinner class. Chef class acts as a factory--it has a method in it to instantiate new dinner (appetizer, entree, dessert) from Chef class.
+// const chef1 = new Chef();
 
-for (let i = 0; i < 9; i++) {
-  timmy.ageUp();
-}
+// const dinnersOfChef = [];
+// const dinner1 = chef1.getDinner('Fried Calamari', 'Lasagna', 'cannoli');
+// const dinner2 = chef1.getDinner('Spam', 'Spam', 'Spam');
+// const dinner3 = chef1.getDinner('bread', 'steak', 'cake');
+// dinnersOfChef.push(dinner1);
+// dinnersOfChef.push(dinner2);
+// dinnersOfChef.push(dinner3);
+// console.log(dinnersOfChef);
 
-const gus = new Hamster('Gus');
+// Cat Combinator
 
-gus.owner = 'Timmy';
+// const cat1 = {
+//   catName: 'Jenny',
+//   breed: 'Mog',
+//   age: 9,
+// };
 
-timmy.buyHamster(gus);
+// console.log(cat1.age);
+// console.log(cat1.breed);
 
-for (let i = 0; i < 15; i++) {
-  timmy.ageUp();
-}
+// const cat2 = {
+//   catName: 'Jam',
+//   breed: 'Siamese',
+//   age: 11,
+// };
 
-timmy.eat();
-timmy.eat();
+// function combineCats(mama, papa) {
+//   const catCombinator = {
+//     catName: mama.catName + papa.catName,
+//     age: 1,
+//     breed: mama.breed + '-' + papa.breed,
+//   };
+//   console.log(catCombinator);
+//   return catCombinator;
+// }
 
-timmy.exercise();
-timmy.exercise();
+// combineCats(cat1, cat2);
 
-// Chef Make Dinners
+// console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
 
-class Dinner {}
-
-class Chef {}
+// console.log(
+//   combineCats(
+//     combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)),
+//     combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))
+//   )
+// );
