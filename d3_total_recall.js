@@ -94,8 +94,7 @@
 // timmy.exercise();
 // timmy.exercise();
 
-// CHEF MAKES DINNERS
-
+// CHEF MAKES DINNERS, SOLUTION FROM OFFICE HRS W/ COLTON
 class Dinner {
   constructor(appetizer, entree, dessert) {
     this.appetizer = appetizer;
@@ -117,19 +116,7 @@ console.log(firstDinner);
 console.log(secondDinner);
 
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-// // CHEF MAKES DINNERS, SOLUTIONS W/ BREAKOUT ROOM'S HELP
+// // CHEF MAKES DINNERS, SOLUTION W/ BREAKOUT ROOM'S HELP
 // class Dinner {
 //   constructor(appetizer, entree, dessert) {
 //     this.appetizer = appetizer;
@@ -144,7 +131,7 @@ console.log(secondDinner);
 //     return dinner;
 //   }
 // }
-// //Creating object for Chef class to then use method and take the properties from Dinner class. Chef class acts as a factory--it has a method in it to instantiate new dinner (appetizer, entree, dessert) from Chef class.
+//
 // const chef1 = new Chef();
 
 // const dinnersOfChef = [];
@@ -156,7 +143,7 @@ console.log(secondDinner);
 // dinnersOfChef.push(dinner3);
 // console.log(dinnersOfChef);
 
-// Cat Combinator
+// CAT COMBINATOR
 
 // const cat1 = {
 //   catName: 'Jenny',
